@@ -1,0 +1,22 @@
+*{
+    -fx-warnaDominan1: #2B2E4A;
+    -fx-warnaDominan2: #292C47;
+    -fx-warnaDominan3: #E84545;
+    -fx-warnaUmum:#fff;
+    -fx-warnaKhusus: #000;
+}
+.container{
+    -fx-background-color: -fx-warnaDominan1;
+}
+.bg-2{
+    -fx-background-color: -fx-warnaDominan2;
+}
+.card{
+    -fx-background-color: -fx-warnaDominan2;
+    -fx-padding: 10;
+}
+.btn-submit{
+    -fx-background-color: -fx-warnaDominan3;
+    -fx-background-radius: 10 10 10 10;
+    -fx-pref-width: 100;
+}

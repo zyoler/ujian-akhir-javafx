@@ -1,0 +1,93 @@
+*{
+    -fx-warnaDominan1: #2B2E4A;
+    -fx-warnaDominan2: #292C47;
+    -fx-warnaDominan3: #E84545;
+    -fx-warnaUmum:#fff;
+    -fx-warnaKhusus: #000;
+    -fx-warnaRedup: #99A799;
+    -fx-text-fill: -fx-warnaUmum;
+}
+.container{
+    -fx-background-color: -fx-warnaDominan1;
+}
+#header, #footer, #sidebar{
+    -fx-background-color: -fx-warnaDominan2;
+}
+#footer{
+    -fx-padding: 16 0 16 0;
+}
+/*TextField*/
+#pencarian{
+    -fx-text-fill: -fx-warnaKhusus;
+}
+/*Tombol*/
+.btn{
+    -fx-background-color: transparent;
+    -fx-pref-width: 100;
+    -fx-padding: 8 8 8 20;
+    -fx-border-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-alignment: center-left;
+}
+.btn-user{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -fx-warnaDominan3;
+}
+.btn-pencarian{
+    -fx-background-color: -fx-warnaDominan3;
+}
+.btn-nav:hover, .btn-nav:focused{
+    -fx-border-color: -fx-warnaDominan3;
+}
+.btn-log:hover{
+    -fx-background-color: -fx-warnaDominan3;
+    -fx-background-radius: 0 30 30 0;
+}
+.btn-sidebar:hover{
+    -fx-background-color: -fx-warnaDominan3;
+    -fx-background-radius: 30 0 0 30;
+    -fx-cursor: hand;
+}
+.btn-tambah{
+    -fx-background-radius: 0 0 0 0;
+    -fx-cursor: hand;
+    -fx-pref-width: 150;
+    /*-fx-alignment: left;*/
+}
+.btn-tambah:hover{
+    -fx-background-color: -fx-warnaDominan3;
+}
+.icons{
+    -fx-font-size: 24;
+    -fx-fill: -fx-warnaUmum;
+}
+.icons{
+    -fx-cursor: hand;
+}
+/*sidebar*/
+#sidebar{
+ -fx-padding: 0 0 32 10;
+    -fx-pref-width: 150;
+}
+#sub-sidebar{
+    -fx-font-size: 12;
+    -fx-text-fill: -fx-warnaRedup;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: -fx-warnaRedup;
+    -fx-pref-width: 100;
+    -fx-font-weight: bold;
+}
+.sub-konten{
+    -fx-padding: 10;
+}
+.form-control{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -fx-warnaDominan3;
+}
+.form-field{
+    -fx-text-fill: -fx-warnaKhusus;
+}
+.form-data{
+    -fx-text-fill: -fx-warnaUmum;
+}

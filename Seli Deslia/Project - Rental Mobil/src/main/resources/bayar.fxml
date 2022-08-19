@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rental.controller.BayarController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #FFABAB;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="PEMBAYARAN" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="340.0" prefWidth="413.0" style="-fx-background-color: #D5AAFF;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="66.0" prefWidth="397.0" style="-fx-background-color: #D5AAFF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Id Transaksi                       :" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="idTransaksiField" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="66.0" prefWidth="397.0" style="-fx-background-color: #D5AAFF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Total yang harus di bayar :">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="totalBayarField" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="66.0" prefWidth="397.0" style="-fx-background-color: #D5AAFF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Masukan uang                   :" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="inputUangField" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="66.0" prefWidth="397.0" style="-fx-background-color: #D5AAFF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Kembalian                          :" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="kembalianField" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="hitungButton" mnemonicParsing="false" text="hitung" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="278.0" prefWidth="220.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tablePembayaran" prefHeight="278.0" prefWidth="171.0" VBox.vgrow="ALWAYS">
+                     <columns>
+                     <TableColumn prefWidth="113.0" text="ID Transaksi">
+                        <cellValueFactory>
+                           <PropertyValueFactory property="id_transaksi" />
+                        </cellValueFactory>
+                     </TableColumn>
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFABAB;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="cetakButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Cetak">
+                     <VBox.margin>
+                        <Insets left="12.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFABAB;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="kembaliButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="kembali" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets right="12.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

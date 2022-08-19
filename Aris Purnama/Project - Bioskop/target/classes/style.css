@@ -1,0 +1,97 @@
+#drawerMenu{
+    -fx-padding: 2px;
+    -fx-spacing: 3px;
+    -fx-alignment: top-center;
+}
+#container{
+    -fx-background-color: aqua;
+}
+#header {
+    -fx-padding: 8px 16px 0px 0px;
+    /*-fx-spacing: 16px;*/
+}
+.button-group {
+    -fx-spacing: 12px;
+    -fx-alignment: baseline_right;
+}
+
+#logo {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+.buttonMenu{
+    -fx-background-color: aqua;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-stroke-width: 100%;
+    -fx-vgap: 20px;
+    -fx-padding: 4px 0px;
+    -fx-text-fill: black;
+}
+.buttonMenu:hover{
+    -fx-background-color: white;
+    -fx-text-fill: #000;
+}
+#container>*{
+    -fx-stroke-width: 100%;
+}
+.label-grup{
+    -fx-text-fill: #000;
+}
+#containerPmsn{
+    -fx-background-color: silver;
+}
+.spacing {
+     -fx-spacing: 16px;
+ }
+.padding {
+    -fx-padding: 0px 14px 0px 14px;
+}
+#BtnLoggin:hover{
+    -fx-background-color: grey;
+    -fx-text-fill: #000;
+}
+.btnLogin{
+    -fx-background-color: yellow;
+    -fx-cursor: hand;
+}
+.btnLogin:hover{
+    -fx-background-color: grey;
+    -fx-text-fill: #000;
+    -fx-cursor: hand;
+}
+/*Beranda*/
+#containerBeranda{
+    -fx-padding: 12px 12px;
+}
+.movies {
+    -fx-padding: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-background-color: silver;
+}
+.movies:hover {
+    -fx-background-color: #fff2;
+}
+.flowjar{
+    -fx-hgap: 12px;
+    -fx-vgap: 12px;
+}
+#grideStyle{
+    -fx-alignment: center;
+}
+
+.scroll {
+    -fx-padding: 12px 12px 12px 12px;
+}
+
+#btnForgotPass:hover{
+    -fx-cursor: hand;
+}
+#paneMaskPass{
+    -fx-background-color: gold;
+}
+#paneMaskPass #textUsername{
+    -fx-background-color: grey;
+    -fx-text-fill: #000;
+}

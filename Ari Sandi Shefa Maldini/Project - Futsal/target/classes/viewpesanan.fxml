@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #2E8B57; -fx-border-color: #000000; -fx-border-width: 2px;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neo.controller.ViewPesananController">
+   <HBox alignment="CENTER_LEFT" minHeight="80.0" prefHeight="80.0" prefWidth="200.0" style="-fx-border-radius: 50px; -fx-border-color: #000000; -fx-border-width: 2px;">
+      <children>
+         <Label text="Detail Booking">
+            <font>
+               <Font name="Comic Sans MS Bold" size="29.0" />
+            </font>
+         </Label>
+      </children>
+      <padding>
+         <Insets left="30.0" />
+      </padding>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <children>
+         <VBox prefHeight="476.0" prefWidth="172.0" spacing="25.0">
+            <children>
+               <Label text="ID Booking" />
+               <Label text="Nama" />
+               <Label text="No Handphone" />
+               <Label text="Tanggal Booking" />
+               <Label text="Tanggal Main" />
+               <Label text="Jam Main" />
+               <Label text="Lama Main" />
+               <Label text="Lapang" />
+               <Label text="Jenis Lapang" />
+               <Label text="Total yang harus dibayar" />
+            </children>
+         </VBox>
+         <VBox prefHeight="480.0" prefWidth="351.0" spacing="25.0" HBox.hgrow="ALWAYS">
+            <children>
+               <Label fx:id="idBooking" text="Label" />
+               <Label fx:id="nama" text="Label" />
+               <Label fx:id="noHp" text="Label" />
+               <Label fx:id="tglBoooking" text="Label" />
+               <Label fx:id="tglMain" text="Label" />
+               <Label fx:id="jamMain" text="Label" />
+               <Label fx:id="lamaMain" text="Label" />
+               <Label fx:id="lapang" text="Label" />
+               <Label fx:id="jenisLapang" text="Label" />
+               <Label fx:id="total" text="Label" />
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" HBox.hgrow="ALWAYS">
+                        <children>
+                           <JFXButton fx:id="konfirmasi" prefWidth="100.0" text="Konfirmasi" />
+                           <JFXButton fx:id="nanti" prefWidth="100.0" text="Nanti" />
+                        </children>
+                     </HBox>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+      <padding>
+         <Insets bottom="20.0" left="30.0" right="30.0" />
+      </padding>
+   </HBox>
+</VBox>

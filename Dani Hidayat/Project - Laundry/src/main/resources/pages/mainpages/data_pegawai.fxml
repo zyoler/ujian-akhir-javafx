@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="680.0" style="-fx-background-color: lightskyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.adminpages.PegawaiController">
+   <Pane layoutY="14.0" prefHeight="64.0" prefWidth="296.0" style="-fx-background-color: #D3D3D3;">
+      <Label layoutX="20.0" layoutY="-8.0" prefHeight="81.0" prefWidth="257.0" style="-fx-text-fill: aquamarine;" text="Data Pegawai">
+         <font>
+            <Font name="Cambria Bold Italic" size="40.0" />
+         </font>
+      </Label>
+   </Pane>
+   <Label layoutX="14.0" layoutY="91.0" text="ID Pegawai" textFill="WHITE">
+      <font>
+         <Font name="Cambria Italic" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="121.0" text="Nama Pegawai" textFill="WHITE">
+      <font>
+         <Font name="Cambria Italic" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="idField" layoutX="140.0" layoutY="91.0" prefHeight="25.0" prefWidth="190.0" />
+   <Label layoutX="14.0" layoutY="151.0" text="Alamat" textFill="WHITE">
+      <font>
+         <Font name="Cambria Italic" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="nameField" layoutX="140.0" layoutY="119.0" prefHeight="25.0" prefWidth="190.0" />
+   <TextField fx:id="alamatField" layoutX="140.0" layoutY="150.0" prefHeight="25.0" prefWidth="190.0" />
+   <Label layoutX="361.0" layoutY="90.0" text="Usia" textFill="WHITE">
+      <font>
+         <Font name="Cambria Italic" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="361.0" layoutY="120.0" text="Jenis kelamin" textFill="WHITE">
+      <font>
+         <Font name="Cambria Italic" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="361.0" layoutY="150.0" text="No. Telepon" textFill="WHITE">
+      <font>
+         <Font name="Cambria Italic" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="usiaField" layoutX="473.0" layoutY="90.0" prefHeight="25.0" prefWidth="190.0" />
+   <TextField fx:id="telpField" layoutX="473.0" layoutY="150.0" prefHeight="25.0" prefWidth="190.0" />
+   <RadioButton fx:id="ikhwanButton" layoutX="473.0" layoutY="124.0" mnemonicParsing="false" text="Laki-laki" textFill="WHITE" />
+   <RadioButton fx:id="akhwatButton" layoutX="561.0" layoutY="124.0" mnemonicParsing="false" text="Perempuan" textFill="WHITE" />
+   <Button fx:id="simpanButton" contentDisplay="TOP" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="74.0" text="Simpan">
+      <graphic>
+         <ImageView fitHeight="85.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../images/icons8-save-close-64.png" />
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="cancelButton" contentDisplay="TOP" layoutX="259.0" layoutY="200.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="74.0" text="Batal">
+      <graphic>
+         <ImageView fitHeight="85.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../images/icons8-delete-64.png" />
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="deleteButton" contentDisplay="TOP" layoutX="177.0" layoutY="200.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="74.0" text="Hapus">
+      <graphic>
+         <ImageView fitHeight="85.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../images/icons8-delete-bin-64.png" />
+         </ImageView>
+      </graphic>
+   </Button>
+   <Button fx:id="editButton" contentDisplay="TOP" layoutX="95.0" layoutY="200.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="74.0" text="Edit">
+      <graphic>
+         <ImageView fitHeight="85.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../images/icons8-edit-file-64.png" />
+         </ImageView>
+      </graphic>
+   </Button>
+   <TableView fx:id="pegawaiTable" layoutX="6.0" layoutY="300.0" prefHeight="186.0" prefWidth="665.0">
+      <columns>
+         <TableColumn text=" ID Pegawai ">
+         <cellValueFactory>
+            <PropertyValueFactory property="id" />
+         </cellValueFactory>
+         </TableColumn>
+         <TableColumn text="Nama Pegawai">
+            <cellValueFactory>
+               <PropertyValueFactory property="nama" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn text=" Alamat ">
+            <cellValueFactory>
+               <PropertyValueFactory property="alamat" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn text=" Usia ">
+            <cellValueFactory>
+               <PropertyValueFactory property="usia" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn text=" Jenis Kelamin ">
+            <cellValueFactory>
+               <PropertyValueFactory property="jenisKelamin" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn text=" Nomor Telepon ">
+            <cellValueFactory>
+               <PropertyValueFactory property="noTelp" />
+            </cellValueFactory>
+         </TableColumn>
+      </columns>
+   </TableView>
+   <ImageView fitHeight="113.0" fitWidth="114.0" layoutX="553.0" layoutY="196.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/icons8-washing-machine-64.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="113.0" fitWidth="114.0" layoutX="449.0" layoutY="196.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/icons8-washing-machine-64.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="113.0" fitWidth="114.0" layoutX="349.0" layoutY="196.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../images/icons8-washing-machine-64.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

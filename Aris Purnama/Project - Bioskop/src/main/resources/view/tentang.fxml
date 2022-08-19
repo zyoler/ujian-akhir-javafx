@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.Controller.tentangController">
+   <VBox prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: gold; -fx-alignment: center;">
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="168.0" text="TENTANG">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0"/>
+         </font>
+      </Label>
+   </VBox>
+   <VBox prefHeight="278.0" prefWidth="600.0" style="-fx-alignment: center;">
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="254.0" text="Aplikasi Biskop Sederhana"/>
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="488.0"
+             text="Aplikasi ini di buat ntuk memenuhi tugas pelatihan saya diPelatihan Fundamental Java"/>
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="460.0"
+             text="Aplikasi ini masih banyak Kekurangan dan Masih Harus Bisa Di Kembagkan Lagi"/>
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="460.0"
+             text="Aplikasi ini dibuat bertujuan untuk memenuh tugas salah satunya. Dan "/>
+      <Label alignment="CENTER" prefHeight="34.0" prefWidth="460.0"
+             text="Sebagai salah satu cara biar kita supaya lebih paham lagi tentang bahasa pemograman di Java"/>
+   </VBox>
+   <HBox prefHeight="70.0" prefWidth="600.0" style="-fx-alignment: center-right;">
+      <VBox.margin>
+         <Insets left="16.0" right="16.0"/>
+      </VBox.margin>
+      <Button fx:id="BtnBack" mnemonicParsing="false" prefWidth="75.0" text="Back"/>
+   </HBox>
+</VBox>

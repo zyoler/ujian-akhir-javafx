@@ -1,0 +1,60 @@
+*{
+    -fx-primaryColor: #2B2E4A;
+    -fx-secondaryColor: #292C47;
+    -fx-basicColor: #E84545;
+    -fx-dominanColor:#fff;
+    -fx-warnaTambahan: #000;
+    -fx-background: #323232;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-basicColor;
+}
+.main{
+    -fx-background-color: -fx-primaryColor;
+}
+.navBtn{
+    -fx-background-radius: 30 0 0 30;
+}
+.loginBtn{
+    -fx-background-radius: 0 30 30 0;
+}
+.btn{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-dominanColor;
+    -fx-pref-width: 125;
+    -fx-pref-height: 40;
+    -fx-padding: 0 0 0 16;
+    -fx-cursor: hand;
+    -fx-font-size: 12;
+}
+.fontAwesome{
+    -fx-fill: -fx-dominanColor;
+    -fx-fill-width: 20;
+}
+.btn:hover{
+    -fx-background-color: -fx-basicColor;
+    -fx-text-fill: -fx-warnaTambahan;
+    -fx-font-weight: bold;
+}
+.btn:hover > .fontAwesome{
+    -fx-fill: -fx-warnaTambahan;
+}
+.brand{
+    -fx-text-fill: -fx-basicColor;
+    -fx-font-size: 32;
+    -fx-font-family: "Segoe UI";
+}
+.header{
+    -fx-background-color: -fx-primaryColor;
+}
+.footer{
+    -fx-background-color: -fx-secondaryColor;
+}
+.navBar{
+    -fx-background-color: -fx-secondaryColor;
+}
+/*header*/
+.pencarian{
+    -fx-background-color: -fx-background;
+    -fx-text-fill: -fx-dominanColor;
+    -fx-font-size: 12;
+}

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rental.controller.PengembalianMobilController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="326.0" prefWidth="215.0" style="-fx-background-color: #85E3FF;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="212.0" style="-fx-background-color: #85E3FF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Data Peminjam" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="25.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="286.0" prefWidth="212.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="289.0" prefWidth="59.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="97.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="id transaksi" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="97.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Nama" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="97.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Alamat" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="97.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="No Telp" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="97.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Email" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="97.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="id mobil" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <ComboBox fx:id="id_transaksi" prefHeight="25.0" prefWidth="258.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="nama_peminjam" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="alamat" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="no_telp" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="email" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="id_mobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="326.0" prefWidth="201.0" style="-fx-background-color: #85E3FF;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="198.0" style="-fx-background-color: #85E3FF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Data Mobil" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="25.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="291.0" prefWidth="198.0" style="-fx-background-color: #85E3FF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="291.0" prefWidth="79.0" style="-fx-background-color: #85E3FF;" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="id mobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Merk mobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="No polisi" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Harga sewa" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Tipe Mobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Tahun pembuatan" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #85E3FF;" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="idMobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="merk_mobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="no_polisi" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="harga_sewa" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tipe_mobil" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <TextField fx:id="tahun_pembuatan" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="326.0" prefWidth="192.0" style="-fx-background-color: #85E3FF;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="33.0" prefWidth="190.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="132.0" text="Pengembalian" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="Bodoni MT Condensed Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Tanggal Peminjaman" HBox.hgrow="ALWAYS" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <DatePicker fx:id="tanggal_pinjam" prefHeight="25.0" prefWidth="557.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Tanggal Pengembalian" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <DatePicker fx:id="tanggal_kembali" prefHeight="25.0" prefWidth="549.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="34.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="39.0" text="Denda" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="12.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="denda" prefHeight="25.0" prefWidth="156.0" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets bottom="12.0" left="12.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="32.0" text="Total" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="12.0" right="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="total" prefHeight="25.0" prefWidth="103.0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="12.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children></HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #E7FFAC;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="lihatTableButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Lihat tabel" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="simpannButton" mnemonicParsing="false" onAction="#simpanButton" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Simpan" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="bersihkanButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Bersihkan" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="kembaliButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Kembali" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

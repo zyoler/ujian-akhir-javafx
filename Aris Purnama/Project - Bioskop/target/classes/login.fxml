@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="400.0" prefWidth="600.0" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.Controller.LoginController">
+   <VBox prefHeight="400.0" prefWidth="172.0" style="-fx-background-color: gold; -fx-alignment: top-center;">
+      <Pane prefHeight="186.0" prefWidth="172.0">
+         <ImageView fitHeight="76.0" fitWidth="178.0" layoutX="-3.0" layoutY="53.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" rotate="90.0" style="-fx-alignment: center;">
+            <image>
+               <Image url="@img/night.jpg" />
+            </image>
+            <effect>
+               <Glow />
+            </effect>
+         </ImageView>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="143.0" text="WELCOME">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="23.0" prefWidth="103.0" text="is " textAlignment="CENTER">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" prefHeight="28.0" prefWidth="80.0" text="BACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </VBox>
+   <Pane prefHeight="400.0" prefWidth="429.0" style="-fx-background-color: #40E0D0;">
+      <TextField fx:id="usernamefield" layoutX="67.0" layoutY="143.0" prefHeight="29.0" prefWidth="289.0" promptText="username" />
+      <StackPane layoutX="67.0" layoutY="204.0">
+         <PasswordField fx:id="passwordField" layoutX="67.0" layoutY="210.0" prefHeight="25.0" prefWidth="289.0" promptText="password" />
+         <TextField fx:id="fieldSow" prefWidth="289.0" />
+      </StackPane>
+      <Button fx:id="BtnLoggin" layoutX="63.0" layoutY="281.0" prefHeight="25.0" prefWidth="289.0" styleClass="btnLogin" text="LOGIN">
+         <font>
+            <Font name="Calisto MT" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="67.0" layoutY="179.0" prefHeight="25.0" prefWidth="109.0" text="PASSWORD" />
+      <Label layoutX="67.0" layoutY="118.0" prefHeight="25.0" prefWidth="109.0" text="USERNAME" />
+      <Label alignment="CENTER" layoutX="153.0" layoutY="14.0" prefHeight="47.0" prefWidth="124.0" text="LOGIN">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="139.0" layoutY="58.0" prefHeight="31.0" prefWidth="152.0" text="codeplayon" textFill="#1e1b1b">
+         <font>
+            <Font name="Calibri Bold" size="26.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cekBokShowPassword" contentDisplay="RIGHT" layoutX="67.0" layoutY="236.0" mnemonicParsing="false" text="show password character" />
+      <JFXButton fx:id="btnForgotPass" layoutX="294.0" layoutY="361.0" prefHeight="25.0" prefWidth="124.0" text="Lupa Kata Sandi" />
+      <ImageView fitHeight="21.0" fitWidth="16.0" layoutX="399.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/question-mark.png" />
+         </image>
+      </ImageView>
+   </Pane>
+</HBox>

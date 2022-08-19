@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefWidth="300.0" style="-fx-background-color: orange;" styleClass="padding, spacing" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.CreateSupplierController">
+    <VBox layoutX="35.0" layoutY="30.0" styleClass="input-group">
+        <children>
+            <Label text="ID Supplier" />
+            <TextField fx:id="idSuppField" promptText="ID Supplier">
+                <padding>
+                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                </padding>
+            </TextField>
+        </children>
+        <VBox.margin>
+            <Insets bottom="20.0" left="25.0" right="25.0" top="25.0" />
+        </VBox.margin>
+    </VBox>
+
+    <VBox styleClass="input-group">
+        <Label text="Nama Supplier"/>
+        <TextField fx:id="namaSuppField" promptText="Nama Supplier">
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding></TextField>
+        <VBox.margin>
+            <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+        </VBox.margin>
+    </VBox>
+
+    <VBox styleClass="input-group">
+        <Label text="Nomor Telepon"/>
+        <TextField fx:id="noTelpField" promptText="Nomor Telepon">
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+        </TextField>
+        <VBox.margin>
+            <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+        </VBox.margin>
+    </VBox>
+
+    <VBox styleClass="input-group">
+        <Label text="Alamat"/>
+        <TextField fx:id="alamatField" promptText="Alamat">
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding></TextField>
+        <VBox.margin>
+            <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+        </VBox.margin>
+    </VBox>
+
+    <HBox prefHeight="25.0" prefWidth="243.0" styleClass="button-group">
+        <Button fx:id="saveSuppButton" onAction="#save" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Simpan">
+            <HBox.margin>
+                <Insets left="10.0" right="15.0" />
+            </HBox.margin></Button>
+        <Button fx:id="cancelSuppButton" onAction="#close" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Batal">
+            <HBox.margin>
+                <Insets left="15.0" />
+            </HBox.margin></Button>
+        <VBox.margin>
+            <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+        </VBox.margin>
+    </HBox>
+</VBox>

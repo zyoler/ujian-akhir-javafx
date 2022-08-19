@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:controller="org.neophyte.controller.CreateAnggotaController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" spacing="20.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <VBox alignment="CENTER" prefHeight="86.0" prefWidth="280.0" style="-fx-background-color: white;">
+         <children>
+            <Label text="ANGGOTA">
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Nama">
+                     <font>
+                        <Font name="Book Antiqua" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameField" promptText="Nama" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="NIM">
+                     <font>
+                        <Font name="Book Antiqua" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nimField" promptText="NIM" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Prodi">
+                     <font>
+                        <Font name="Book Antiqua" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prodiField" promptText="Prodi" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Semester">
+                     <font>
+                        <Font name="Book Antiqua" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="semesterField" promptText="Semester" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="280.0" spacing="20.0">
+         <children>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" text="Simpan" />
+            <Button fx:id="cancleButton" mnemonicParsing="false" onAction="#close" text="  Batal  " />
+         </children>
+      </HBox>
+   </children>
+</VBox>

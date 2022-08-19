@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.Adminmastercontroller">
+    <children>
+        <HBox prefHeight="72.0" prefWidth="800.0" style="-fx-background-color: #FA8072;">
+            <children>
+                <Label prefHeight="72.0" prefWidth="406.0" text="PANEL OWNER" textFill="WHITE">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="36.0" />
+                   </font>
+                   <HBox.margin>
+                      <Insets left="15.0" />
+                   </HBox.margin>
+                </Label>
+             </children>
+             <VBox.margin>
+                 <Insets top="5.0" />
+             </VBox.margin>
+        </HBox>
+        <HBox prefHeight="12.0" prefWidth="800.0" style="-fx-background-color: #ECF142;" />
+        <HBox prefHeight="45.0" prefWidth="800.0" />
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Pengguna">
+                <TableView fx:id="userTable" prefHeight="371.0" prefWidth="760.0">
+                    <columns>
+                        <TableColumn text="Nomor">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Username">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="username" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Password">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="password" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Nama">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="name" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Aktif">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="active" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+            </Tab>
+            <Tab text="Riwayat Transaksi">
+                <TableView fx:id="riwayatTable" prefHeight="371.0" prefWidth="760.0">
+                    <columns>
+                        <TableColumn text="ID Transaksi">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="ID Pelanggan">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idPelanggan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Tanggal Transaksi">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tglTransaksi" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Tanggal Ambil">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tglAmbil" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Total Harga">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="totalHarga" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Bayar">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="bayar" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn text="Kembalian">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kembalian" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </Tab>
+        </TabPane>
+
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+             <children>
+                <Button fx:id="editButton" mnemonicParsing="false" onAction="#edit" prefHeight="20.0" prefWidth="72.0" text="Edit">
+                    <HBox.margin>
+                        <Insets right="40.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="closeButton" mnemonicParsing="false" prefHeight="20.0" prefWidth="72.0" text="Close">
+                    <HBox.margin>
+                        <Insets right="40.0" />
+                    </HBox.margin>
+                </Button>
+             </children>
+        </HBox>
+    </children>
+</VBox>

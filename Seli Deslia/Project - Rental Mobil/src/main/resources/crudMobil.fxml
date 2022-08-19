@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rental.controller.CrudMobilController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Data Mobil" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font name="Bodoni MT Black" size="36.0" />
+                    </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.2619047619047619" startY="0.10476190476190475">
+                     <stops>
+                        <Stop color="#7c95e8" />
+                        <Stop color="#56fc6f" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="349.0" prefWidth="615.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="mobilTable" prefHeight="287.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn prefWidth="84.0" text="id mobil">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id_mobil" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="82.0" text="merk mobil">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="merk_mobil" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="78.0" text="No polisi">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="no_polisi" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="85.0" text="Harga Sewa">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="harga_sewa" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="85.0" text="Tipe Mobil">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tipe_mobil" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="113.0" text="Tahun Pembuatan">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tahun_pembuatan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="72.0" text="Status">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="status" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Button fx:id="tambahButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Tambah" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.2619047619047619" startY="0.10476190476190475">
+                           <stops>
+                              <Stop color="#2443ab" />
+                              <Stop color="#dd3a3a" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                        <Button fx:id="editButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Edit" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.2619047619047619" startY="0.10476190476190475">
+                           <stops>
+                              <Stop color="#4766cd" />
+                              <Stop color="#9a1111" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                        <Button fx:id="hapusButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Hapus" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.2619047619047619" startY="0.10476190476190475">
+                           <stops>
+                              <Stop color="#425db5" />
+                              <Stop color="#b22c32" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                        <Button fx:id="kembaliButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-ackground-color: white;" styleClass="main_button" stylesheets="/style.css" text="Kembali" textFill="#0d0d0d" VBox.vgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.2619047619047619" startY="0.10476190476190475">
+                           <stops>
+                              <Stop color="#3b59bc" />
+                              <Stop color="#8d1420" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffd1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rental.controller.tentangController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="600.0" style="-fx-background-color: #E7FFEC;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Tentang Aplikasi">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="51.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="205.0" fitWidth="317.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@img/home_1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aplikasi Rental Mobil" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Bodoni MT Condensed Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aplikasi ini dibuat oleh Seli Deslia" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="18.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="pada tanggal 26 November 2021. " VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aplikasi ini sibuat untuk memenuhi">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UAS Fundamental Java">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="600.0" style="-fx-background-color: #E7FFEC;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="kembaliButton" mnemonicParsing="false" style="-fx-background-color: orange;" text="Kembali" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="16.0" />
+               </HBox.margin>
+            </Button>
+
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

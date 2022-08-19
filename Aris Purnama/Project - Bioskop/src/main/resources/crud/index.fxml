@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox focusTraversable="true" prefHeight="600" prefWidth="750" spacing="12.0" styleClass="spacing" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.Controller.KelolaStudioController">
+    <Label fx:id="logo" prefHeight="27.0" prefWidth="198.0">CINEMA MANAGEMENT</Label>
+    <TabPane prefHeight="576.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <Tab text="DATA USER">
+            <VBox>
+                <TableView fx:id="userTable" prefHeight="510.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="idUser" minWidth="15.0" prefWidth="100.0" text="ID">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="username" prefWidth="160.0" text="USERNAME">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="username" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="password" minWidth="15.0" prefWidth="160.0" text="PASSWORD">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="password" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="namaUser" prefWidth="214.0" text="NAMA ">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaUser" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="admmin" prefWidth="115.0" resizable="false" text="ADMIN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="admin" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox prefHeight="45.0" prefWidth="750.0" spacing="6.0" styleClass="button-group" VBox.vgrow="ALWAYS">
+                    <Label prefHeight="27.0" prefWidth="45.0" style="-fx-text-fill: white;" text="cari">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="showSearchUserTextfield" prefHeight="25.0" prefWidth="350.0" HBox.hgrow="ALWAYS" />
+                    <Button fx:id="createUserButton" prefHeight="25.0" prefWidth="75.0">Tambah</Button>
+                    <Button fx:id="editUserButton" prefHeight="25.0" prefWidth="75.0">Edit</Button>
+                    <Button fx:id="deleteUserButton" prefHeight="25.0" prefWidth="75.0">Hapus</Button>
+                    <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                    </padding>
+                </HBox>
+            </VBox>
+        </Tab>
+        <Tab fx:id="tombolEmploye" text="DATA EMPLOYEE">
+            <VBox>
+                <TableView fx:id="employeeTable" prefHeight="510.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn prefWidth="110.0" text="ID_EMPLOYEE">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idEmploye" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="172.0" text="NAMA_EMPLOYEE">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaEmploye" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="171.0" text="ALAMAT">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="alamatEmploye" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="148.0" text="NO KONTAK">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="noKontak" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="148.0" text="JABATAN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jabatan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox prefHeight="47.0" prefWidth="750.0" spacing="6.0" styleClass="button-group" VBox.vgrow="ALWAYS">
+                    <Label prefHeight="27.0" prefWidth="42.0" style="-fx-text-fill: white;" text="cari">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="showSearchEmployeeTextfield" prefHeight="25.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </TextField>
+                    <Button fx:id="createEmployeButton" prefHeight="25.0" prefWidth="75.0">Tambah</Button>
+                    <Button fx:id="editEmployeButton" prefHeight="25.0" prefWidth="75.0">Edit</Button>
+                    <Button fx:id="deleteEmployeButton" prefHeight="25.0" prefWidth="75.0">Hapus</Button>
+                    <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                    </padding>
+                </HBox>
+            </VBox>
+        </Tab>
+        <Tab fx:id="tombolTiket" text="DATA TIKET">
+            <VBox>
+                <TableView fx:id="tiketTable" prefHeight="510.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn prefWidth="121.0" text="KODE TIKET">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kdTiket" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="200.0" text="JENIS TIKET">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jenisTiket" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="192.0" text="HARGA">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="harga" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox prefHeight="47.0" prefWidth="750.0" spacing="6.0" styleClass="button-group" VBox.vgrow="ALWAYS">
+                    <Label prefHeight="27.0" prefWidth="41.0" style="-fx-text-fill: white;" text="cari">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <TextField fx:id="showSearchTiketTextfield" prefHeight="25.0" prefWidth="350.0" HBox.hgrow="ALWAYS">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </TextField>
+                    <Button fx:id="createTiketButton" prefHeight="25.0" prefWidth="75.0">Tambah</Button>
+                    <Button fx:id="editTiketButton" prefHeight="25.0" prefWidth="75.0">Edit</Button>
+                    <Button fx:id="deleteTiketButton" prefHeight="25.0" prefWidth="75.0">Hapus</Button>
+                    <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                    </padding>
+                </HBox>
+            </VBox>
+        </Tab>
+    </TabPane>
+    <opaqueInsets>
+        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+    </padding>
+</VBox>

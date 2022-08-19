@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #2E8B57; -fx-background-radius: 20px; -fx-border-radius: 10px; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neo.controller.DataController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="600.0">
+         <children>
+            <Label text="Data Booking">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="25.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label text="Cari" />
+                  <TextField fx:id="cari" promptText="Nama......." />
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="viewBooking" maxWidth="1.7976931348623157E308" prefHeight="296.0" prefWidth="580.0">
+                    <columns>
+                      <TableColumn prefWidth="73.66665649414062" text="ID Booking">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="id_booking" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn prefWidth="111.99996948242188" text="Nama">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="nama" />
+                          </cellValueFactory>
+                      </TableColumn>
+                        <TableColumn prefWidth="32.000030517578125" text="No HP">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="no_hp" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="Tgl Booking">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tgl_pesan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="Tgl Main">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tgl_main" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="Jam">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="pukul" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="81.22222900390625" text="Lama">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="lama" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="0.0" prefWidth="0.0" text="ID Lapang">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="id_lapang" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: orange;" styleClass="spacing" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.RiwayatController">
+    <Label fx:id="logo" text="Riwayat Transaksi">
+        <font>
+            <Font name="Colonna MT" size="30.0" />
+        </font>
+        <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+        </VBox.margin></Label>
+    <TabPane tabClosingPolicy="UNAVAILABLE">
+        <Tab fx:id="riwayatPenjualan" onSelectionChanged="#forPenjualan" text="Riwayat Transaksi Penjualan">
+            <VBox styleClass="padding, spacing">
+                <TableView fx:id="penjualanTable" prefHeight="485.0" prefWidth="800.0" style="-fx-background-color: #ffffaa;">
+                    <columns>
+                  <TableColumn prefWidth="100.0" text="No">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                     </cellValueFactory>
+                  </TableColumn>
+                        <TableColumn prefWidth="100.0" text="ID Penjualan">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idPenjualan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="200.0" text="Tanggal Penjualan">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tanggalPenjualan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                  <TableColumn prefWidth="100.0" text="ID Obat">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="idObat" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="100.0" text="Jumlah Obat">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="qty" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="120.0" text="Total">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="total" />
+                     </cellValueFactory>
+                  </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox styleClass="button-group">
+                    <Button fx:id="hapusPenjButton" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Hapus">
+                        <HBox.margin>
+                            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                        </HBox.margin>
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <padding>
+                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                        </padding></Button>
+               <Button fx:id="kembaliPenjButton" layoutX="20.0" layoutY="30.0" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Kembali">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                  </padding>
+                  <HBox.margin>
+                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  </HBox.margin>
+               </Button>
+                </HBox>
+            </VBox>
+        </Tab>
+        <Tab fx:id="riwayatPembelian" onSelectionChanged="#forPembelian" text="Riwayat Transaksi Pembelian">
+            <VBox styleClass="padding, spacing">
+                <TableView fx:id="pembelianTable" style="-fx-background-color: #ffffaa;">
+                    <columns>
+                  <TableColumn prefWidth="100.0" text="No">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                     </cellValueFactory>
+                  </TableColumn>
+                        <TableColumn prefWidth="100.0" text="ID Pembelian">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idPembelian" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="ID Supplier">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idSupplier" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="120.0" text="Tanggal Pembelian">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tglPembelian" />
+                            </cellValueFactory>
+                        </TableColumn>
+                  <TableColumn prefWidth="100.0" text="ID Obat">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="idObat" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="100.0" text="Jumlah Obat">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="qty" />
+                     </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="100.0" text="Total">
+                     <cellValueFactory>
+                        <PropertyValueFactory property="total" />
+                     </cellValueFactory>
+                  </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox styleClass="button-group">
+                    <Button fx:id="hapusPembButton" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Hapus">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                        </HBox.margin>
+                        <padding>
+                            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                        </padding></Button>
+               <Button fx:id="kembaliPembButton" layoutX="20.0" layoutY="30.0" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Kembali">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                  </padding>
+                  <HBox.margin>
+                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                  </HBox.margin>
+               </Button>
+                </HBox>
+            </VBox>
+        </Tab>
+    </TabPane>
+</VBox>

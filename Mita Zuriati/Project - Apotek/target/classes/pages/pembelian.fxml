@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.pembelianController">
+    <children>
+        <HBox prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: orange;">
+            <children>
+                <Label text="Pembelian">
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Colonna MT" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffaa;" VBox.vgrow="ALWAYS">
+            <children>
+                <Label layoutX="85.0" layoutY="25.0" text="ID Pembelian">
+                    <font>
+                        <Font name="BellGothicStd-Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="95.0" text="Tanggal Pembelian">
+                    <font>
+                        <Font name="BellGothicStd-Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="130.0" text="ID Obat">
+                    <font>
+                        <Font name="BellGothicStd-Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="85.0" layoutY="165.0" text="Jumlah Obat">
+                    <font>
+                        <Font name="BellGothicStd-Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="pembelianTable" layoutX="65.0" layoutY="284.0" prefHeight="163.0" prefWidth="590.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0">
+                    <columns>
+                        <TableColumn prefWidth="90.0" text="ID Pembelian">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idPembelian" />
+                            </cellValueFactory>
+                        </TableColumn>
+                  <TableColumn prefWidth="90.0" text="ID Supplier">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="idSupplier" />
+                      </cellValueFactory>
+                  </TableColumn>
+                        <TableColumn prefWidth="140.0" text="Tanggal Pembelian">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tglPembelian" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="90.0" text="ID Obat">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idObat" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="100.0" text="Jumlah Obat">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="qty" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="110.0" text="Total">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="total" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <Button fx:id="simpanPembButton" layoutX="85.0" layoutY="220.0" mnemonicParsing="false" onAction="#save" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Simpan">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+                </Button>
+                <Button fx:id="bersihPembButton" layoutX="210.0" layoutY="220.0" mnemonicParsing="false" onAction="#clear" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Bersihkan">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+                </Button>
+                <TextField fx:id="idPembelianField" layoutX="250.0" layoutY="25.0" prefHeight="25.0" prefWidth="280.0" />
+                <TextField fx:id="qtyField" layoutX="250.0" layoutY="165.0" prefWidth="280.0" />
+            <Label layoutX="85.0" layoutY="60.0" text="ID Supplier">
+               <font>
+                  <Font name="BellGothicStd-Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="idSupplierField" layoutX="250.0" layoutY="60.0" prefHeight="25.0" prefWidth="280.0" />
+            <ComboBox fx:id="idObatField" layoutX="250.0" layoutY="130.0" prefHeight="25.0" prefWidth="280.0" />
+            <DatePicker fx:id="tglPembelianField" layoutX="250.0" layoutY="95.0" prefHeight="25.0" prefWidth="280.0" />
+            <Button fx:id="selesaiPembButton" layoutX="335.0" layoutY="220.0" mnemonicParsing="false" onAction="#pembayaran" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Bayar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </Button>
+            <Button fx:id="kembaliPembButton" layoutX="460.0" layoutY="220.0" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Kembali">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

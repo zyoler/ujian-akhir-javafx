@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.CrudBukuController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="172.0" style="-fx-background-color: pink;">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="READ ME!" textFill="#9f1818">
+               <font>
+                  <Font name="Lucida Bright Demibold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="244.0" prefWidth="172.0" spacing="10.0">
+               <children>
+                  <Button fx:id="Beranda" mnemonicParsing="false" style="-fx-background-color: none;" text="Beranda">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Buku" mnemonicParsing="false" style="-fx-background-color: none;" text="  Buku  ">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Peminjaman" mnemonicParsing="false" style="-fx-background-color: none;" text="Peminjaman">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Admin" mnemonicParsing="false" style="-fx-background-color: none;" text="Admin">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Logout" mnemonicParsing="false" text="Logout" />
+               </children>
+            </HBox>
+         </children></VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FDF5E6;" HBox.hgrow="ALWAYS">
+         <children>
+            <TableView fx:id="BooksTable" prefHeight="375.0" prefWidth="408.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="60.33331298828125" text="Id">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="89.66668701171875" text="Judul Buku">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="judulbuku" />
+                    </cellValueFactory>
+                </TableColumn>
+                  <TableColumn prefWidth="75.0" text="Penulis">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="penulis" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="75.0" text="Penerbit">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="penerbit" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="89.33331298828125" text="Tahun Terbit">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="Tahunterbit" />
+                      </cellValueFactory>
+                  </TableColumn>
+                  <TableColumn prefWidth="77.66668701171875" text="Kategori">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="kategori" />
+                      </cellValueFactory>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="408.0" spacing="10.0">
+               <children>
+                  <Button fx:id="createBooks" mnemonicParsing="false" text="Tambah" />
+                  <Button fx:id="updateBooks" onAction="#edit" mnemonicParsing="false" text="Edit" />
+                  <Button fx:id="deleteBooks" mnemonicParsing="false" text="Delete" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

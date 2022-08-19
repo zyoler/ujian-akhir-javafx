@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" styleClass="container" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="indomarco.controllers.log.MasukController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="450.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="200.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" spacing="10.0" styleClass="card" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TOP" maxWidth="1.7976931348623157E308" text="Silahkan masuk" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USER" size="32" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" prefHeight="60.0" prefWidth="260.0" styleClass="form-control">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="100.0" text="Nama pengguna" HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="namaPengguna" prefHeight="25.0" prefWidth="0.0" promptText="Nama pengguna..." styleClass="form-field" HBox.hgrow="ALWAYS" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="80.0" prefHeight="60.0" prefWidth="260.0" styleClass="form-control">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="100.0" text="Kata sandi" HBox.hgrow="ALWAYS" />
+                              <PasswordField fx:id="kataSandi" promptText="Kata sandi..." styleClass="form-field" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_RIGHT" layoutX="20.0" layoutY="220.0" prefHeight="60.0" prefWidth="260.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#daftarView" text="Daftar baru">
+                                 <styleClass>
+                                    <String fx:value="btn-nav" />
+                                    <String fx:value="btn" />
+                                 </styleClass></Button>
+                              <Button layoutX="250.0" layoutY="28.0" mnemonicParsing="false" onAction="#masukAksi" styleClass="btn-submit" text="Masuk" />
+                           </children>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/daftar-masuk.css" />
+      <URL value="@../css/master.css" />
+   </stylesheets>
+</VBox>

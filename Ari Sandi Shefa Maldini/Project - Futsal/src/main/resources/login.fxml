@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neo.controller.LoginController">
+   <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <children>
+         <ImageView fitHeight="402.0" fitWidth="265.0" pickOnBounds="true" HBox.hgrow="ALWAYS">
+            <image>
+               <Image url="@image/wp.jpg" />
+            </image>
+         </ImageView>
+         <VBox prefHeight="399.0" prefWidth="345.0" HBox.hgrow="ALWAYS">
+            <children>
+               <HBox prefHeight="21.0" prefWidth="600.0">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <padding>
+                     <Insets left="10.0" />
+                  </padding>
+                  <ImageView fitHeight="61.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@image/lgo.png" />
+                  </ImageView>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" stylesheets="@style.css" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <ImageView fitHeight="61.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@image/neophyte.png" />
+                     </ImageView>
+                  </HBox>
+               </HBox>
+               <VBox alignment="CENTER" prefHeight="330.0" prefWidth="400.0">
+                  <GridPane focusTraversable="true" maxWidth="288.0" prefHeight="120.0" prefWidth="288.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.33331298828125" minWidth="10.0" prefWidth="78.66668701171875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="209.33331298828125" minWidth="10.0" prefWidth="209.33331298828125" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <Label text="Password " textFill="WHITE" GridPane.rowIndex="1">
+                        <font>
+                           <Font name="Comic Sans MS" size="12.0" />
+                        </font>
+                     </Label>
+                     <Label text="Username" textFill="WHITE">
+                        <font>
+                           <Font name="Comic Sans MS" size="12.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="userTextile" focusTraversable="false" prefHeight="2.0" prefWidth="210.0" GridPane.columnIndex="1" />
+                     <PasswordField fx:id="passTextile" focusTraversable="false" prefHeight="2.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <Button fx:id="loginButton" focusTraversable="false" mnemonicParsing="false" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <font>
+                           <Font name="Comic Sans MS" size="12.0" />
+                        </font>
+                     </Button>
+                  </GridPane>
+               </VBox>
+               <HBox alignment="BOTTOM_RIGHT" prefHeight="97.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                  <Label fx:id="time" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold Italic" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </HBox>
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+</VBox>

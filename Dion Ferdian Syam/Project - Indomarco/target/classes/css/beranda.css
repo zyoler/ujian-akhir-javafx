@@ -1,0 +1,26 @@
+*{
+    -fx-primaryColor: #2B2E4A;
+    -fx-secondaryColor: #292C47;
+    -fx-basicColor: #E84545;
+    -fx-dominanColor:#fff;
+    -fx-warnaTambahan: #000;
+    -fx-background: #323232;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-basicColor;
+    -fx-font-family: "Segoe UI";
+}
+#berandaKonten{
+    -fx-background-color: -fx-primaryColor;
+}
+/*konten*/
+.subJudul{
+    -fx-font-size: 16;
+    /*-fx-background-color: -fx-basicColor;*/
+    -fx-text-fill: -fx-dominanColor;
+    -fx-padding: 8;
+    -fx-pref-width: 170;
+    -fx-pref-height: 35;
+    -fx-border-color: -fx-basicColor;
+    -fx-border-width: 0 0 2 0;
+
+}

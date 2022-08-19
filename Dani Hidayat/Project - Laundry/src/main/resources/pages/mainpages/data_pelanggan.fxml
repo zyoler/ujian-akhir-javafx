@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="680.0" style="-fx-background-color: lightskyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.adminpages.PelangganController">
+   <children>
+      <Pane layoutY="14.0" prefHeight="64.0" prefWidth="318.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label layoutX="20.0" layoutY="-8.0" prefHeight="81.0" prefWidth="319.0" style="-fx-text-fill: aquamarine;" text="Data Pelanggan">
+               <font>
+                  <Font name="Cambria Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="pelangganTable" layoutX="25.0" layoutY="160.0" minWidth="630.0" prefHeight="231.0">
+        <columns>
+          <TableColumn text=" ID Pelanggan ">
+             <cellValueFactory>
+                <PropertyValueFactory property="id" />
+             </cellValueFactory>
+          </TableColumn>
+          <TableColumn text="Nama">
+             <cellValueFactory>
+                <PropertyValueFactory property="nama" />
+             </cellValueFactory>
+          </TableColumn>
+            <TableColumn text="Alamat">
+               <cellValueFactory>
+                  <PropertyValueFactory property="alamat" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn text=" No Telepon ">
+               <cellValueFactory>
+                  <PropertyValueFactory property="noTelp" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn text=" Tanggal Daftar ">
+               <cellValueFactory>
+                  <PropertyValueFactory property="tglDaftar" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn text=" Keterangan ">
+               <cellValueFactory>
+                  <PropertyValueFactory property="proses" />
+               </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="tambahButton" layoutX="162.0" layoutY="404.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="166.0" text="Tambah Data">
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8-add-new-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hapusButton" layoutX="358.0" layoutY="404.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="166.0" text="Hapus Data">
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icons8-delete-bin-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="208.0" fitWidth="359.0" layoutX="321.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/images-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

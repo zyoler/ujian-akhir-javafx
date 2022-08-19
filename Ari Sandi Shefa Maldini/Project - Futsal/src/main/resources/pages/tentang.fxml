@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neo.controller.TentangController">
+   <children>
+      <HBox alignment="CENTER_LEFT" minHeight="70.0" prefHeight="70.0" spacing="15.0">
+         <children>
+            <ImageView fx:id="img" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            <Label text="Tentang">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <VBox alignment="CENTER" prefHeight="415.0" prefWidth="559.0" style="-fx-background-color: #b8860b; -fx-background-radius: 100%; -fx-border-color: black; -fx-border-radius: 20px;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label prefHeight="526.0" prefWidth="610.0" style="-fx-border-width: 2px;" text="Fun Futsal menyediakan jasa penyewaan lapangan futsal untuk para pemain yang ingin bermain, berlatih ataupun untuk bertanding. Terdapat banyak jenis lapangan dengan kualitas terbaik dan tidak terlalu merogoh saku anda terlalu dalam. Untuk itu jangan berlama lama mari bermain bersama kami. Bersama Kita Senang!!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

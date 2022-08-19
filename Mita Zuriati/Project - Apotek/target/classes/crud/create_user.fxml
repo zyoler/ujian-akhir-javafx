@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefWidth="300.0" style="-fx-background-color: orange;" styleClass="padding, spacing" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.CreateUserController">
+
+    <VBox styleClass="input-group">
+        <Label>Nama pengguna</Label>
+        <TextField fx:id="usernameField" promptText="Nama pengguna">
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding></TextField>
+      <VBox.margin>
+         <Insets bottom="20.0" left="25.0" right="25.0" top="20.0" />
+      </VBox.margin>
+    </VBox>
+
+    <VBox styleClass="input-group">
+        <Label>Kata sandi</Label>
+        <PasswordField fx:id="passwordField" promptText="Kata sandi">
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding></PasswordField>
+      <VBox.margin>
+         <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+      </VBox.margin>
+    </VBox>
+
+    <VBox styleClass="input-group">
+        <Label>Nama</Label>
+        <TextField fx:id="nameField" promptText="Nama">
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding></TextField>
+      <VBox.margin>
+         <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+      </VBox.margin>
+    </VBox>
+
+    <CheckBox fx:id="adminCheckBox" text="Admin">
+      <VBox.margin>
+         <Insets bottom="15.0" left="25.0" right="25.0" top="5.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+      </padding></CheckBox>
+
+    <HBox styleClass="button-group">
+        <Button fx:id="saveButton" onAction="#save" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Simpan">
+         <HBox.margin>
+            <Insets left="10.0" right="15.0" />
+         </HBox.margin></Button>
+        <Button fx:id="cancelButton" onAction="#close" prefWidth="100.0" style="-fx-background-color: #3498DB;" text="Batal">
+         <HBox.margin>
+            <Insets left="15.0" />
+         </HBox.margin></Button>
+      <VBox.margin>
+         <Insets bottom="20.0" left="25.0" right="25.0" top="5.0" />
+      </VBox.margin>
+    </HBox>
+</VBox>

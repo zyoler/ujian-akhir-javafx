@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rental.controller.CrudAdminController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="600.0" style="-fx-background-color: #D5AAFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Data Admin" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold" size="51.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#7074e0" />
+                        <Stop color="#3a41c6" offset="0.026819923371647496" />
+                        <Stop color="#a8323c" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="349.0" prefWidth="615.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="adminTable" prefHeight="292.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="125.0" text="id">
+                    <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="184.0" text="username">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="username" />
+                    </cellValueFactory>
+                </TableColumn>
+                  <TableColumn prefWidth="290.0" text="nama admin">
+                      <cellValueFactory>
+                          <PropertyValueFactory property="nama_admin" />
+                      </cellValueFactory>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #D5AAFF;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="tambahButton" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #FFF5BA;" text="Tambah" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#1f258a" />
+                              <Stop color="#1f258a" offset="0.026819923371647496" />
+                              <Stop color="#bf323b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <Button fx:id="editButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #FFF5BA;" text="Edit" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#1f258a" />
+                              <Stop color="#1f258a" offset="0.026819923371647496" />
+                              <Stop color="#bf323b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <Button fx:id="hapusButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #FFF5BA;" text="Hapus" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#1f258a" />
+                              <Stop color="#1f258a" offset="0.02681992337164749" />
+                              <Stop color="#bf323b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+                  <Button fx:id="kembaliButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" style="-fx-background-color: #FFF5BA;" text="Kembali" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </HBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#1f258a" />
+                              <Stop color="#1f258a" offset="0.02681992337164749" />
+                              <Stop color="#bf323b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

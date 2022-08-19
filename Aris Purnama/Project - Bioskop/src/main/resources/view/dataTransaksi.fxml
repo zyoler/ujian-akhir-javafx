@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox focusTraversable="true" prefHeight="600" prefWidth="750" spacing="12.0" style="-fx-alignment: center;" styleClass="spacing" stylesheets="/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.Controller.DataTransaksi">
+    <Label fx:id="logo" alignment="CENTER" prefHeight="27.0" prefWidth="198.0" text="DATA TRANSAKSI">CINEMA MANAGEMENT</Label>
+    <TabPane prefHeight="576.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+        <Tab text="TRANSAKSI">
+            <VBox>
+                <TableView fx:id="dataTransaksi" prefHeight="510.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn minWidth="15.0" prefWidth="68.0" text="ID TRK">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idTransaksi" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="90.0" text="TANGGAL">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tanggal" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="JUMLAH">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jumlahTiket" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="90.0" text="ID OPERATOR">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idUser" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="120.0" resizable="false" text="NAMA OPERATOR">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaUser" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="KODE TIKET">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kdeTiket" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="100.0" text="HARGA TIKET">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="harga" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="140.0" text="ALAMAT CUSTOMER">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="alamatCustomer" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="idUser4" minWidth="15.0" prefWidth="140.0" text="NAMA CUSTOMER">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaCustomer" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="idUser5" minWidth="15.0" prefWidth="120.0" text="KODE TAYANG">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kodeTayang" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="idUser6" minWidth="15.0" prefWidth="110.0" text="TITTLE">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tittle" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="idUser7" minWidth="15.0" prefWidth="90.0" text="JAM TAYANG">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jamTayang" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="idUser8" minWidth="15.0" prefWidth="90.0" text="TOTAL">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="total" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn fx:id="idUser9" minWidth="15.0" prefWidth="90.0" text="KETERANGAN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="keterangan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox prefHeight="45.0" prefWidth="750.0" spacing="6.0" styleClass="button-group" VBox.vgrow="ALWAYS">
+                    <TextField fx:id="showSearchTransaksiTextfield" prefHeight="25.0" prefWidth="350.0" HBox.hgrow="ALWAYS" />
+<!--                    <Button fx:id="editTransaksiButton" prefHeight="25.0" prefWidth="75.0">Edit</Button>-->
+                    <Button fx:id="deleteTransaksiButton" prefHeight="25.0" prefWidth="75.0">Hapus</Button>
+                    <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                    </padding>
+                </HBox>
+            </VBox>
+        </Tab>
+        <Tab fx:id="tombolTiket" text="CUSTOMER">
+            <VBox>
+                <TableView fx:id="customerTable" prefHeight="510.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn prefWidth="121.0" text="ID CUSTOMER">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idCustomer"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="200.0" text="NAMA CUSTOMER">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaCustomer"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="192.0" text="ALAMAT">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="alamat"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="192.0" text="NO KOTAK">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="noKontak"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="192.0" text="JEIS KELAMIN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jenisKelamin"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox prefHeight="47.0" prefWidth="750.0" spacing="6.0" styleClass="button-group" VBox.vgrow="ALWAYS">
+                    <TextField prefHeight="25.0" prefWidth="350.0" HBox.hgrow="ALWAYS" fx:id="showSearchCustomerTextfield">
+                        <HBox.margin>
+                            <Insets/>
+                        </HBox.margin>
+                    </TextField>
+                    <Button fx:id="deleteCustomerButton" prefHeight="25.0" prefWidth="75.0">Hapus</Button>
+                    <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0"/>
+                    </padding>
+                </HBox>
+            </VBox>
+        </Tab>
+        <Tab text="HISTORY">
+            <VBox>
+                <TableView fx:id="dataHistory" prefHeight="510.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn minWidth="15.0" prefWidth="68.0" text="ID TRK">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idTransaksi" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="90.0" text="TANGGAL">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tanggal" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="JUMLAH">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jumlahTiket" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="90.0" text="ID OPERATOR">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="idUser" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="120.0" resizable="false" text="NAMA OPERATOR">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaUser" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="KODE TIKET">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kdeTiket" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="100.0" text="HARGA TIKET">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="harga" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="140.0" text="ALAMAT CUSTOMER">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="alamatCustomer" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="140.0" text="NAMA CUSTOMER">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="namaCustomer" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="120.0" text="KODE TAYANG">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kodeTayang" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="110.0" text="TITTLE">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tittle" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="JAM TAYANG">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="jamTayang" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="TOTAL">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="total" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn minWidth="15.0" prefWidth="90.0" text="KETERANGAN">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="keterangan" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <HBox prefHeight="45.0" prefWidth="750.0" spacing="6.0" styleClass="button-group" VBox.vgrow="ALWAYS">
+                    <TextField fx:id="showSearchHistory" prefHeight="25.0" prefWidth="350.0" HBox.hgrow="ALWAYS" />
+                    <!--                    <Button fx:id="editTransaksiButton" prefHeight="25.0" prefWidth="75.0">Edit</Button>-->
+                    <Button fx:id="deleteHistoryButton" prefHeight="25.0" prefWidth="75.0">Hapus</Button>
+                    <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                    </padding>
+                </HBox>
+            </VBox>
+        </Tab>
+      <padding>
+         <Insets left="12.0" right="12.0" />
+      </padding>
+    </TabPane>
+</VBox>

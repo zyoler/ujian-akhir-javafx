@@ -1,0 +1,8 @@
+.books{
+    /*-fx-background-color: #fff1;*/
+    /*-fx-cursor: hand;*/
+    /*-fx-background-radius: 16px;*/
+    -fx-padding: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}

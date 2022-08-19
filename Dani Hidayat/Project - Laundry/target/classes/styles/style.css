@@ -1,0 +1,34 @@
+.root
+{
+    -fx-font-family: Cambria;
+}
+.button
+{
+    -fx-background-color: #fff;
+    -fx-cursor: hand;
+    -fx-background-radius: 16px;
+}
+.button:hover
+{
+    -fx-background-color : #73A3EF ;
+}
+.button:pressed
+{
+    -fx-background-color : #F3F3F3 ;
+    -fx-cursor: wait;
+}
+.table-view {
+    -fx-background-color: rgba(67,128,235,0.4);
+}
+.table-row-cell {
+    -fx-background-color: rgba(0,0,0,0.7);
+    -fx-text-fill: whitesmoke;
+    -fx-cursor: hand;
+}
+.table-row-cell:selected {
+    -fx-background-color: #73A3EF;
+}
+.table-column {
+    -fx-text-fill: whitesmoke;
+}
+

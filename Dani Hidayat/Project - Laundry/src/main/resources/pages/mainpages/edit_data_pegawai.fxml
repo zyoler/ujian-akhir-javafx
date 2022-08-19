@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="680.0" style="-fx-background-color: lightskyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.controller.adminpages.EditPegawaiController">
+   <children>
+      <Pane layoutY="12.0" prefHeight="52.0" prefWidth="381.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Label layoutX="16.0" layoutY="-17.0" prefHeight="81.0" prefWidth="455.0" style="-fx-text-fill: aquamarine;" text="Ubah Data Pegawai">
+               <font>
+                  <Font name="Cambria Bold Italic" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="closeButton" layoutX="381.0" layoutY="304.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="117.0" text="Batalkan">
+<!--         <graphic>-->
+<!--            <ImageView fitHeight="98.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../../images/icons8-delete-64.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--         </graphic>-->
+      </Button>
+      <Button fx:id="saveButton" layoutX="155.0" layoutY="305.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="117.0" text="Simpan Data">
+<!--         <graphic>-->
+<!--            <ImageView fitHeight="98.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">-->
+<!--               <image>-->
+<!--                  <Image url="@../../images/icons8-save-close-64.png" />-->
+<!--               </image>-->
+<!--            </ImageView>-->
+<!--         </graphic>-->
+      </Button>
+      <Label layoutX="131.0" layoutY="96.0" text="ID Pegawai">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="128.0" text="Nama Pegawai">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="158.0" text="Alamat">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="242.0" layoutY="91.0" prefHeight="25.0" prefWidth="316.0" />
+      <TextField fx:id="namaField" layoutX="242.0" layoutY="123.0" prefHeight="25.0" prefWidth="316.0" />
+      <TextField fx:id="alamatField" layoutX="242.0" layoutY="153.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="131.0" layoutY="191.0" text="Usia">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usiaField" layoutX="242.0" layoutY="186.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="131.0" layoutY="225.0" text="Jenis Kelamin">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="256.0" text="No Telepon">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telpButton" layoutX="242.0" layoutY="253.0" prefHeight="25.0" prefWidth="316.0" />
+      <RadioButton fx:id="ikhwanButton" layoutX="242.0" layoutY="226.0" mnemonicParsing="false" text="Laki-laki">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="akhwatButton" layoutX="357.0" layoutY="226.0" mnemonicParsing="false" text="Perempuan">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

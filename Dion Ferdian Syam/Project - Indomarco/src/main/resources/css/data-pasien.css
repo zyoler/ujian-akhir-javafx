@@ -1,0 +1,46 @@
+*{
+    -fx-warnaDominan1: #2B2E4A;
+    -fx-warnaDominan2: #292C47;
+    -fx-warnaDominan3: #E84545;
+    -fx-warnaUmum:#fff;
+    -fx-warnaKhusus: #000;
+    -fx-warnaRedup: #99A799;
+    -fx-background-color: transparent;
+
+    -fx-primaryColor: #2B2E4A;
+    -fx-secondaryColor: #292C47;
+    -fx-basicColor: #E84545;
+    -fx-dominanColor:#fff;
+    -fx-warnaTambahan: #000;
+    -fx-background: #323232;
+}
+.sub-header{
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: -fx-basicColor;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: -fx-warnaRedup;
+    -fx-pref-width: 120;
+}
+.cell-pasien{
+    -fx-font-weight: bold;
+    -fx-padding: 0 8;
+}
+.cell-center{
+    -fx-alignment: center;
+}
+.indexed-cell:hover > *{
+    -fx-background-color: -fx-warnaRedup;
+    -fx-text-fill: -fx-warnaTambahan;
+    -fx-cursor: hand;
+}.indexed-cell:selected{
+    /*-fx-background-color: -fx-basicColor;*/
+     -fx-border-width: 0 0 1 0;
+     -fx-border-color: -fx-basicColor;
+}
+ .indexed-cell{
+     -fx-start-margin: 4;
+ }
+ .container{
+     /*-fx-background-color: ;*/
+ }

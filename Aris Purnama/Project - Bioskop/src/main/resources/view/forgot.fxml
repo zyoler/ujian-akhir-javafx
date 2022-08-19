@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="340.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.neophyte.Controller.forgotController">
+   <AnchorPane prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: gold;">
+      <Label alignment="CENTER" layoutX="182.0" layoutY="13.0" prefHeight="29.0" prefWidth="236.0" text="UBAH KATA SANDI ">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <VBox prefHeight="222.0" prefWidth="600.0">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <Label layoutX="14.0" layoutY="21.0" prefHeight="35.0" prefWidth="150.0" text="Masukkan Username Anda" />
+         <TextField fx:id="userTextField" layoutX="224.0" layoutY="21.0" prefHeight="35.0" prefWidth="290.0" promptText="username" />
+         <Label layoutX="14.0" layoutY="115.0" prefHeight="35.0" prefWidth="150.0" text="Password Baru Anda" />
+         <Label layoutX="14.0" layoutY="151.0" prefHeight="35.0" prefWidth="171.0" text="Konfirmasi Password Baru Anda" />
+         <TextField fx:id="PasswordBaru" layoutX="225.0" layoutY="120.0" prefHeight="25.0" prefWidth="290.0" />
+         <TextField fx:id="konfirmasiPasswordBaru" layoutX="226.0" layoutY="156.0" prefHeight="25.0" prefWidth="290.0" />
+      </AnchorPane>
+   </VBox>
+   <HBox prefHeight="61.0" prefWidth="576.0" spacing="12.0" style="-fx-alignment: center-right;">
+      <VBox.margin>
+         <Insets left="12.0" right="12.0" />
+      </VBox.margin>
+      <Button fx:id="nextBtn" mnemonicParsing="false" prefWidth="75.0" text="Ubah" />
+      <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#close" prefWidth="75.0" text="Cancel" />
+   </HBox>
+</VBox>
